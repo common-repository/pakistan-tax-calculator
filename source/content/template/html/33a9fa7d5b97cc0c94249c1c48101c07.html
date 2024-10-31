@@ -1,0 +1,50 @@
+<section class="ptxc-wrap">
+    <form>
+        <div class="ptxc-row-col-6 ptxc-col-12">
+            
+            <div class="ptxc-form-group ptxc-col-6 mt-1">
+                <select id="ptxc-calculation-years" class="ptxc-form-control">
+                    <option value="On or After 01 July 2022 - Individual / AOP">On or After 01 July 2022 – Individual / AOP</option><option value="Before 01 July 2022 - Individual / AOP">Before 01 July 2022 – Individual / AOP</option><option value="Companies">Companies</option><option value="Banking Company">Banking Company</option><option value="Small Company">Small Company</option><option value="Future Commodity Contract by Member of Pakistan Mercantile Exchange">Future Commodity Contract by Member of Pakistan Mercantile Exchange</option><option value="Before 01 July 2013 - Individual / AOP">Before 01 July 2013 – Individual / AOP</option>
+                </select>
+            </div>
+            <div class="ptxc-form-group ptxc-col-6 mt-1">
+                <select id="ptxc-calculation-base" class="ptxc-form-control">
+                    <option value="does not exceed one year">does not exceed one year</option><option value="exceeds one year but does not exceed two years">exceeds one year but does not exceed two years</option><option value="exceeds two years but does not exceed three years">exceeds two years but does not exceed three years</option><option value="exceeds three years but does not exceed four years">exceeds three years but does not exceed four years</option><option value="exceeds four years but does not exceed five years">exceeds four years but does not exceed five years</option><option value="exceeds five years but does not exceed six years">exceeds five years but does not exceed six years</option><option value="exceeds six years">exceeds six years</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="ptxc-form-group ptxc-col-12 mt-1">
+            <input type="number" id="ptxc-income" class="ptxc-form-control" placeholder="Enter Capital Gain on Securities purchased  After 01 July 2022 - Individual / AOP" onkeypress="return ptxc_isNumberKey(event);">
+        </div>
+        <div class="ptxc-col-12">
+            <span id="ptxc-formula_bar">
+                <b>Formula : </b>
+                <span id="ptxc-formula_text"></span>
+            </span> 
+        </div>
+        <div class="ptxc-calculation-content ptxc-row-col-6 ptxc-col-12">
+            
+            <div class="ptxc-tab-content ptxc-col-12" id="ptxc-yaerly_tab">
+                <table class="ptxc-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Tax On <span id="ptxc_table_Heading"> After 01 July 2022 – Individual / AOP</span></th>    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Capital Gain <span id="ptxc_table_td1"> After 01 July 2022</span></td>    
+                            <td id="ptxc-yearly_income_id"></td>    
+                        </tr>
+                        <tr>
+                            <td>Annual Income Tax</td>    
+                            <td id="ptxc-yearly_tax_id"></td>    
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</section>

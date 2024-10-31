@@ -1,0 +1,99 @@
+<section class="ptxc-wrap">
+    <form>
+        <div class="ptxc-row-col-6 ptxc-col-12">
+            <div class="ptxc-form-group ptxc-col-6 mt-1">
+                <select id="ptxc-calculation-base" class="ptxc-form-control">
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="ptxc-form-group ptxc-col-6 mt-1">
+                <select id="ptxc-calculation-years" class="ptxc-form-control">
+                    <option value="2023-2024">2023-2024</option><option value="2022-2023">2022-2023</option><option value="2021-2022">2021-2022</option><option value="2020-2021">2020-2021</option><option value="2019-2020">2019-2020</option><option value="2018-2019">2018-2019</option><option value="2017-2018">2017-2018</option><option value="2016-2017">2016-2017</option><option value="2015-2016">2015-2016</option><option value="2014-2015">2014-2015</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="ptxc-form-group ptxc-col-12 mt-1">
+            <input type="number" id="ptxc-income" class="ptxc-form-control" placeholder="Your Monthly Salary" onkeypress="return ptxc_isNumberKey(event);">
+        </div>
+        <div class="ptxc-col-12">
+            
+                <span id="ptxc-formula_bar">
+                    <b>Formula : </b>
+                    <span id="ptxc-formula_text"></span>
+                </span> 
+                <a class="ptxc-modal-link" href="#" id="ptxc_detail_modal_link">Read slab here</a>
+            
+        </div>
+        <div class="ptxc-calculation-content ptxc-row-col-6 ptxc-col-12">
+            <div class="ptxc-tab-content ptxc-col-6" id="ptxc-monthly_tab">
+                <table class="ptxc-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">MONTHLY</th>    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monthly Income</td>    
+                            <td id="ptxc-monthly_income_id"></td>    
+                        </tr>
+                        <tr>
+                            <td>Monthly Tax</td>    
+                            <td id="ptxc-monthly_tax_id"></td>    
+                        </tr>
+                        <tr>
+                            <td>Salary After Tax</td>    
+                            <td id="ptxc-salary_after_tax"></td>    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="ptxc-tab-content ptxc-col-6" id="ptxc-yaerly_tab">
+                <table class="ptxc-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">YEARLY</th>    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Yearly Income</td>    
+                            <td id="ptxc-yearly_income_id"></td>    
+                        </tr>
+                        <tr>
+                            <td>Yearly Tax</td>    
+                            <td id="ptxc-yearly_tax_id"></td>    
+                        </tr>
+                        <tr>
+                            <td>Salary After Tax</td>    
+                            <td id="ptxc-yearly_after_tax"></td>    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal" id="ptxc_detail_modal" style="display:none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span id="ptxc_cancel" class="close">×</span>
+                    <h2>Tax Slabs</h2>
+                </div>
+                <div class="modal-body" id="modal_content">
+                    <h2>Income Tax Slabs</h2>
+<p>As per Federal Budget 2023-2024 presented by Government of Pakistan, following slabs and income tax rates will be applicable for salaried persons for the year 2023-2024:</p>
+<ul>
+<li>Where the taxable salary income does not exceed Rs. 600,000 the rate of income tax is 0%.</li>
+<li>Where the taxable salary income exceeds Rs. 600,000 but does not exceed Rs. 1,200,000 the rate of income tax is 2.5% of the amount exceeding Rs. 600,000</li>
+<li>Where the taxable salary income exceeds Rs. 1,200,000 but does not exceed Rs. 2,400,000 the rate of income tax is Rs. 15,000+12.5% of the amount exceeding Rs. 1,200,000.</li>
+<li>Where the taxable salary income exceeds Rs. 2,400,000 but does not exceed Rs. 3,600,000 the rate of income tax is Rs. 165,000 + 20% of the amount exceeding Rs. 2,400,000.</li>
+<li>Where the taxable salary income exceeds Rs. 3,600,000 but does not exceed Rs. 6,000,000 the rate of income tax is Rs. 405,000 + 25% of the amount exceeding Rs. 3,600,000.</li>
+<li>Where the taxable salary income exceeds Rs. 6,000,000 the rate of income tax is Rs. 2,955,000 + 35% of the amount exceeding Rs. 6,000,000.</li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>

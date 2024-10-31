@@ -1,0 +1,46 @@
+<section class="ptxc-wrap">
+    <form>
+        <div class="ptxc-row-col-6 ptxc-col-12">
+            
+            <div class="ptxc-form-group ptxc-col-6 mt-1">
+                <select id="ptxc-calculation-years" class="ptxc-form-control">
+                    <option value="Individual / AOP - Stock funds">Individual / AOP – Stock funds</option><option value="Individual / AOP - Other funds">Individual / AOP – Other funds</option><option value="Companies - Stock funds">Companies – Stock funds</option><option value="Company - Other funds">Company – Other funds</option><option value="dividend receipts of the fund are less than capital gains">dividend receipts of the fund are less than capital gains</option><option value="holding period of the security is more than six years">holding period of the security is more than six years</option>
+                </select>
+            </div>
+            <div class="ptxc-form-group ptxc-col-6 mt-1">
+                <input type="number" id="ptxc-income" class="ptxc-form-control" placeholder="Enter Capital Gain on Properties - Individual / AOP - Stock funds" onkeypress="return ptxc_isNumberKey(event);">
+            </div>
+        </div>
+        
+        <div class="ptxc-col-12">
+            <span id="ptxc-formula_bar">
+                <b>Formula : </b>
+                <span id="ptxc-formula_text"></span>
+            </span> 
+        </div>
+
+        <div class="ptxc-calculation-content ptxc-row-col-6 ptxc-col-12">
+            
+            <div class="ptxc-tab-content ptxc-col-12" id="ptxc-yaerly_tab">
+                <table class="ptxc-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Tax On <span id="ptxc_table_Heading">Individual / AOP – Stock funds</span></th>    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Capital Gain <span id="ptxc_table_td1">Individual / AOP – Stock funds</span></td>    
+                            <td id="ptxc-yearly_income_id"></td>    
+                        </tr>
+                        <tr>
+                            <td>Annual Income Tax</td>    
+                            <td id="ptxc-yearly_tax_id"></td>    
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</section>

@@ -1,0 +1,47 @@
+<section class="ptxc-wrap">
+    <form>
+        <div class="ptxc-row-col-6 ptxc-col-12">
+            <div class="ptxc-form-group ptxc-col-6 mt-1">
+                <input type="number" id="ptxc-income" class="ptxc-form-control" placeholder="Enter Business Amount" onkeypress="return ptxc_isNumberKey(event);">
+            </div>
+            
+            <div class="ptxc-form-group ptxc-col-6 mt-1">
+                <select id="ptxc-calculation-years" class="ptxc-form-control">
+                    <option value="2023-2024">2023-2024</option><option value="2022-2023">2022-2023</option><option value="2021-2022">2021-2022</option><option value="2020-2021">2020-2021</option><option value="2019-2020">2019-2020</option><option value="2018-2019">2018-2019</option>
+                </select>
+            </div>
+        </div>
+        <div class="ptxc-col-12">
+            <span id="ptxc-formula_bar">
+                <b>Formula : </b>
+                <span id="ptxc-formula_text"></span>
+            </span> 
+        </div>
+        <div class="ptxc-calculation-content ptxc-row-col-6 ptxc-col-12">
+    
+                <div class="ptxc-tab-content ptxc-col-12" id="ptxc-yaerly_tab">
+                    <table class="ptxc-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Business Tax Calculator</th>    
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Accounting Profit</td>    
+                                <td id="ptxc-yearly_income_id"></td>    
+                            </tr>
+                            <tr>
+                                <td>Tax On Profit</td>    
+                                <td id="ptxc-yearly_tax_id"></td>    
+                            </tr>
+                            <tr>
+                                <td>Profit After Tax</td>    
+                                <td id="ptxc-yearly_after_tax"></td>    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+    </form>
+</section>
